@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>Video tope wapo</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>DAW09 - UF2 - ACTIVITAT 3 - VIDEO DIGITAL</h2>
+        <p>Espacio ocupado para poder hacer scroll y ver el video :D.</p>
+        <h2>Video OpenShot</h2>
+        <div class="reproductor-video">
+            <video id="mivideo" muted loop>
+                <source src="./media/OpenShotVideo.mp4" type="video/mp4">
+                Tu navegador no admite este video
+                <a href="./media/OpenShotVideo.mp4">Miralo aquí</a>
+            </video>
+
+            <div class="botonera">
+                <button onclick="twicePlayPause()">
+                    <span id="playimg" class="material-icons-outlined">pause_circle</span>
+                </button>
+                <button onclick="twiceMuteSound()">
+                    <span id="volumeimg" class="material-icons-outlined">volume_off</span>
+                </button>
+            </div>
+        </div>
+        <h2>Video Youtube</h2>
+        <div class="container-yt">
+
+            <iframe  class="responsive-iframe" src="https://www.youtube.com/embed/H_cvu3SvDKA?controls=0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
